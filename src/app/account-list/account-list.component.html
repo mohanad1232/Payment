@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>system accounts List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>HolderName</th>
+          <th>PhoneNumber</th>
+          <th>Description</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of accounts | async">
+          <td>{{account.accountNumber}}</td>
+          <td>{{account.accountHolderName}}</td>
+          <td>{{account.accountHolderPhoneNumber}}</td>
+          <td>{{account.accountDescription}}</td>
+          <td>
+     <button (click)="accountDetails(account.id)" class="btn btn-info" style="margin-left: 1px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

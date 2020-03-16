@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLink="accounts" class="nav-link" routerLinkActive="active">accounts List</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">Add account</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="paymentlist" class="nav-link" routerLinkActive="active">payment list</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="paymentcreate" class="nav-link" routerLinkActive="active">Create Payment</a>
+</li>
+<li class="nav-item">
+  <a routerLink="Fakelogin" class="nav-link" routerLinkActive="active">Fake Login</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>All Rights Reserved 2020 M0hanaD AlHelO</span>
+  </div>
+</footer>

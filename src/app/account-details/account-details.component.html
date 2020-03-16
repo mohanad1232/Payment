@@ -1,0 +1,25 @@
+<h2>Account Details</h2> 
+
+<hr/>
+<div *ngIf="account">
+  <div>
+    <label><b>accountNumber: </b></label> {{account.accountNumber}}
+  </div>
+  <div>
+    <label><b>HolderName: </b></label> {{account.accountHolderName}}
+  </div>
+  <div>
+    <label><b>PhoneNumber: </b></label> {{account.accountHolderPhoneNumber}}
+  </div>  
+
+  <div>
+    <label><b>Description: </b></label> {{account.accountDescription}}
+  </div>  
+  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Account List</button><br>
+
+
